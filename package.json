@@ -1,18 +1,28 @@
 {
   "name": "desenvovimento-web-2025",
   "version": "1.0.0",
-  "description": "<!-- EXEMPLO: \"AtendeAí — Fila de Ajuda em Sala\" -->",
+  "description": "<!-- Escreva o problema sem falar de telas/tecnologias.\r      Responda: Quem sofre? Onde? O que atrapalha? Por que isso importa?\r      EXEMPLO: Em aulas práticas, alunos esperam muito para serem atendidos.\r      Há filas confusas e frustração. O professor não vê ordem nem tempo de espera.\r      Objetivo inicial: organizar a fila para reduzir a espera e garantir justiça. -->\r - Em aulas práticas, alunos esperam muito para serem atendidos.\r - Há filas confusas e frustração. O professor não vê ordem nem tempo de espera.\r - Objetivo inicial: organizar a fila para reduzir a espera e garantir justiça",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "reset-database": "node src/commands/reset-database.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leobravoe/desenvovimento-web-2025.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leobravoe/desenvovimento-web-2025/issues"
+  },
+  "homepage": "https://github.com/leobravoe/desenvovimento-web-2025#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
